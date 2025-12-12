@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'audioplayers_demo.dart';
+import 'connectivity_plus_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -14,6 +15,12 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       description: '音频播放功能演示',
       keyword: 'audio audioplayers 音频 播放',
       builder: (context) => AudioplayersDemo(),
+    ),
+    FunctionItem(
+      title: 'connectivity_plus Demo',
+      description: '网络连接状态检测功能演示',
+      keyword: 'connectivity network 网络 连接 检测',
+      builder: (context) => ConnectivityPlusDemo(),
     ),
   ];
 
@@ -75,6 +82,8 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
   IconData _getIconForFunction(String title) {
     if (title.contains('audioplayers') || title.contains('音频')) {
       return Icons.music_note;
+    } else if (title.contains('connectivity') || title.contains('网络') || title.contains('连接')) {
+      return Icons.network_check;
     }
     return Icons.apps;
   }

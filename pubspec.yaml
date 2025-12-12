@@ -44,6 +44,10 @@ dependencies:
       url: "https://gitcode.com/openharmony-sig/flutter_audioplayers.git"
       path: "packages/audioplayers"
 
+  connectivity_plus:
+    git:
+      url: "https://gitee.com/openharmony-sig/flutter_plus_plugins.git"
+      path: "packages/connectivity_plus/connectivity_plus"
 
 dev_dependencies:
   flutter_test:
