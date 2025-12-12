@@ -6,6 +6,7 @@ import 'samples/StatelessWidget_demo.dart';
 import 'samples/life_cycle.dart';
 import 'samples/onWillPopDemo.dart';
 import 'samples/fluttertoast_demo.dart';
+import 'samples/library_test_home.dart';
 
 // 获取Flutter版本信息
 String getFlutterVersion() {
@@ -87,6 +88,12 @@ class _HomePageState extends State<HomePage> {
       description: 'toast提示功能演示',
       keyword: 'toast fluttertoast 提示',
       builder: (context) => FluttertoastDemo(),
+    ),
+    FunctionItem(
+      title: 'Flutter三方库测试',
+      description: '各种Flutter三方库的测试demo入口',
+      keyword: 'library 三方库 测试 demo',
+      builder: (context) => LibraryTestHome(),
     ),
   ];
   
@@ -257,6 +264,8 @@ class _HomePageState extends State<HomePage> {
       return Icons.motorcycle;
     } else if (title.contains('Fluttertoast') || title.contains('toast')) {
       return Icons.message;
+    } else if (title.contains('三方库') || title.contains('library')) {
+      return Icons.library_books;
     }
     return Icons.apps;
   }

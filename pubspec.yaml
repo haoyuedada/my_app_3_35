@@ -39,6 +39,12 @@ dependencies:
       url: "https://gitcode.com/openharmony-sig/flutter_fluttertoast.git"
       ref: br_8.2.8_ohos
 
+  audioplayers:
+    git:
+      url: "https://gitcode.com/openharmony-sig/flutter_audioplayers.git"
+      path: "packages/audioplayers"
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
