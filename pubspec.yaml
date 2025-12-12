@@ -48,6 +48,10 @@ dependencies:
     git:
       url: "https://gitee.com/openharmony-sig/flutter_plus_plugins.git"
       path: "packages/connectivity_plus/connectivity_plus"
+  device_info_plus:
+    git:
+      url: "https://gitee.com/openharmony-sig/flutter_plus_plugins.git"
+      path: "packages/device_info_plus/device_info_plus"
 
 dev_dependencies:
   flutter_test:
