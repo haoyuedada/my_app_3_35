@@ -7,6 +7,12 @@ import 'samples/life_cycle.dart';
 import 'samples/onWillPopDemo.dart';
 import 'samples/fluttertoast_demo.dart';
 
+// 获取Flutter版本信息
+String getFlutterVersion() {
+  // 直接返回Flutter版本信息
+  return '3.9.2'; // 这是Flutter SDK的版本号，不是Dart SDK的版本号
+}
+
 void main() {
   runApp(const MyApp());
 }
@@ -34,6 +40,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   // 搜索关键词
   String _searchText = '';
+  
+  // Flutter版本信息
+  String _flutterVersion = getFlutterVersion();
   
   // 所有功能入口的数据
   final List<FunctionItem> _allFunctionItems = [
@@ -121,7 +130,7 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.all(8.0),
             width: double.infinity,
             child: Text(
-              'Flutter Version: ${const String.fromEnvironment('FLUTTER_VERSION')}',
+              'Dart Version: $_flutterVersion',
               style: TextStyle(
                 fontSize: 14,
                 color: Colors.blueGrey,
