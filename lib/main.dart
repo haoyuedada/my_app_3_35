@@ -113,7 +113,29 @@ class _HomePageState extends State<HomePage> {
             ),
         ],
       ),
-      body: _buildBody(),
+      body: Column(
+        children: [
+          // 展示 Flutter 版本
+          Container(
+            color: Colors.blue[50],
+            padding: EdgeInsets.all(8.0),
+            width: double.infinity,
+            child: Text(
+              'Flutter Version: ${const String.fromEnvironment('FLUTTER_VERSION')}',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.blueGrey,
+                fontWeight: FontWeight.w500,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          // 原有内容
+          Expanded(
+            child: _buildBody(),
+          ),
+        ],
+      ),
     );
   }
   
