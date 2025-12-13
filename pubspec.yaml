@@ -64,6 +64,10 @@ dependencies:
       url: "https://gitee.com/openharmony-sig/fluttertpc_flutter_local_notifications.git"
       path: "flutter_local_notifications"
 
+  flutter_widget_from_html_core:
+    git:
+      url: "https://gitcode.com/openharmony-sig/flutter_widget_from_html.git"
+      path: "packages/core"
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -4,6 +4,7 @@ import 'connectivity_plus_demo.dart';
 import 'device_info_plus_demo.dart';
 import 'package_info_plus_demo.dart';
 import 'flutter_local_notifications_demo.dart';
+import 'flutter_widget_from_html_core_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -42,6 +43,12 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       description: '本地通知功能演示',
       keyword: 'notification local_notifications 通知 本地通知',
       builder: (context) => FlutterLocalNotificationsDemo(),
+    ),
+    FunctionItem(
+      title: 'flutter_widget_from_html_core Demo',
+      description: 'HTML内容渲染功能演示',
+      keyword: 'html widget render html渲染 widget',
+      builder: (context) => FlutterWidgetFromHtmlCoreDemo(),
     ),
   ];
 
@@ -111,6 +118,8 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       return Icons.info;
     } else if (title.contains('flutter_local_notifications') || title.contains('通知')) {
       return Icons.notifications;
+    } else if (title.contains('flutter_widget_from_html_core') || title.contains('html')) {
+      return Icons.description;
     }
     return Icons.apps;
   }
