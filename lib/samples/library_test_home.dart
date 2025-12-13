@@ -7,6 +7,7 @@ import 'flutter_local_notifications_demo.dart';
 import 'flutter_widget_from_html_core_demo.dart';
 import 'fluttertoast_demo.dart';
 // import 'image_crop_demo.dart';
+// import 'image_cropper_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -64,6 +65,12 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
     //   keyword: 'image crop image_crop 图片 裁剪',
     //   builder: (context) => ImageCropDemo(),
     // ),
+    // FunctionItem(
+    //   title: 'image_cropper Demo',
+    //   description: '图片裁剪功能演示',
+    //   keyword: 'image cropper image_cropper 图片 裁剪',
+    //   builder: (context) => ImageCropperDemo(),
+    // ),
 ];
 
   @override
@@ -119,26 +126,28 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       ),
     );
   }
-
-  // 根据功能标题获取对应图标
-  IconData _getIconForFunction(String title) {
-    if (title.contains('audioplayers') || title.contains('音频')) {
-      return Icons.music_note;
-    } else if (title.contains('connectivity') || title.contains('网络') || title.contains('连接')) {
-      return Icons.network_check;
-    } else if (title.contains('device_info_plus') || title.contains('设备') || title.contains('信息')) {
-      return Icons.devices;
-    } else if (title.contains('package_info_plus') || title.contains('应用') || title.contains('版本')) {
-      return Icons.info;
-    } else if (title.contains('flutter_local_notifications') || title.contains('通知')) {
-      return Icons.notifications;
-    } else if (title.contains('flutter_widget_from_html_core') || title.contains('html')) {
-      return Icons.description;
-    } else if (title.contains('fluttertoast') || title.contains('提示')) {
-     return Icons.notifications;
-   }
-    return Icons.apps;
+// 根据功能标题获取对应图标
+IconData _getIconForFunction(String title) {
+  if (title.contains('audioplayers') || title.contains('音频')) {
+    return Icons.music_note;
+  } else if (title.contains('connectivity') || title.contains('网络') || title.contains('连接')) {
+    return Icons.network_check;
+  } else if (title.contains('device_info_plus') || title.contains('设备') || title.contains('信息')) {
+    return Icons.devices;
+  } else if (title.contains('package_info_plus') || title.contains('应用') || title.contains('版本')) {
+    return Icons.info;
+  } else if (title.contains('flutter_local_notifications') || title.contains('通知')) {
+    return Icons.notifications;
+  } else if (title.contains('flutter_widget_from_html_core') || title.contains('html')) {
+    return Icons.description;
+  } else if (title.contains('fluttertoast') || title.contains('提示')) {
+    return Icons.notifications;
+  } else if (title.contains('image_cropper')) {
+    return Icons.crop;
   }
+  return Icons.apps;
+}
+
 }
 
 // 功能项数据模型（和main.dart中的一致）
