@@ -5,6 +5,7 @@ import 'device_info_plus_demo.dart';
 import 'package_info_plus_demo.dart';
 import 'flutter_local_notifications_demo.dart';
 import 'flutter_widget_from_html_core_demo.dart';
+import 'fluttertoast_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -50,7 +51,13 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       keyword: 'html widget render html渲染 widget',
       builder: (context) => FlutterWidgetFromHtmlCoreDemo(),
     ),
-  ];
+    FunctionItem(
+    title: 'fluttertoast Demo',
+    description: 'Toast提示功能演示',
+    keyword: 'toast fluttertoast 提示',
+    builder: (context) => FluttertoastDemo(),
+  ),
+];
 
   @override
   Widget build(BuildContext context) {
@@ -120,6 +127,8 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       return Icons.notifications;
     } else if (title.contains('flutter_widget_from_html_core') || title.contains('html')) {
       return Icons.description;
+    } else if (title.contains('fluttertoast') || title.contains('提示')) {
+      return Icons.notifications;
     }
     return Icons.apps;
   }
