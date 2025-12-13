@@ -6,7 +6,7 @@ import 'package_info_plus_demo.dart';
 import 'flutter_local_notifications_demo.dart';
 import 'flutter_widget_from_html_core_demo.dart';
 import 'fluttertoast_demo.dart';
-import 'image_crop_demo.dart';
+// import 'image_crop_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -58,12 +58,12 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
     keyword: 'toast fluttertoast 提示',
     builder: (context) => FluttertoastDemo(),
   ),
-    FunctionItem(
-      title: 'image_crop Demo',
-      description: '图片裁剪功能演示',
-      keyword: 'image crop image_crop 图片 裁剪',
-      builder: (context) => ImageCropDemo(),
-    ),
+    // FunctionItem(
+    //   title: 'image_crop Demo',
+    //   description: '图片裁剪功能演示',
+    //   keyword: 'image crop image_crop 图片 裁剪',
+    //   builder: (context) => ImageCropDemo(),
+    // ),
 ];
 
   @override
@@ -136,8 +136,6 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       return Icons.description;
     } else if (title.contains('fluttertoast') || title.contains('提示')) {
      return Icons.notifications;
-   } else if (title.contains('image_crop') || title.contains('图片') || title.contains('裁剪')) {
-     return Icons.crop;
    }
     return Icons.apps;
   }
