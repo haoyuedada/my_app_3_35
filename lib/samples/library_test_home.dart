@@ -3,6 +3,7 @@ import 'audioplayers_demo.dart';
 import 'connectivity_plus_demo.dart';
 import 'device_info_plus_demo.dart';
 import 'package_info_plus_demo.dart';
+import 'flutter_local_notifications_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -35,6 +36,12 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       description: '应用信息获取功能演示',
       keyword: 'package info package_info_plus 应用 信息',
       builder: (context) => PackageInfoPlusDemo(),
+    ),
+    FunctionItem(
+      title: 'flutter_local_notifications Demo',
+      description: '本地通知功能演示',
+      keyword: 'notification local_notifications 通知 本地通知',
+      builder: (context) => FlutterLocalNotificationsDemo(),
     ),
   ];
 
@@ -102,6 +109,8 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       return Icons.devices;
     } else if (title.contains('package_info_plus') || title.contains('应用') || title.contains('版本')) {
       return Icons.info;
+    } else if (title.contains('flutter_local_notifications') || title.contains('通知')) {
+      return Icons.notifications;
     }
     return Icons.apps;
   }

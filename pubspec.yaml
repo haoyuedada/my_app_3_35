@@ -58,6 +58,11 @@ dependencies:
     git:
       url: "https://gitee.com/openharmony-sig/flutter_plus_plugins.git"
       path: "packages/package_info_plus/package_info_plus"
+  
+  flutter_local_notifications:
+    git: 
+      url: "https://gitee.com/openharmony-sig/fluttertpc_flutter_local_notifications.git"
+      path: "flutter_local_notifications"
 
 dev_dependencies:
   flutter_test:
