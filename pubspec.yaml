@@ -68,6 +68,11 @@ dependencies:
     git:
       url: "https://gitcode.com/openharmony-sig/flutter_widget_from_html.git"
       path: "packages/core"
+
+  image_crop:
+    git:
+      url: "https://gitee.com/openharmony-sig/flutter_image_crop.git"
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
