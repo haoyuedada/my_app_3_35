@@ -8,6 +8,7 @@ import 'flutter_widget_from_html_core_demo.dart';
 import 'fluttertoast_demo.dart';
 // import 'image_crop_demo.dart';
 // import 'image_cropper_demo.dart';
+import 'image_gallery_saver_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -71,6 +72,12 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
     //   keyword: 'image cropper image_cropper 图片 裁剪',
     //   builder: (context) => ImageCropperDemo(),
     // ),
+    FunctionItem(
+      title: 'image_gallery_saver Demo',
+      description: '图片保存到相册功能演示',
+      keyword: 'image gallery saver image_gallery_saver 图片 相册 保存',
+      builder: (context) => ImageGallerySaverDemo(),
+    ),
 ];
 
   @override
@@ -143,7 +150,9 @@ IconData _getIconForFunction(String title) {
   } else if (title.contains('fluttertoast') || title.contains('提示')) {
     return Icons.notifications;
   } else if (title.contains('image_cropper')) {
-    return Icons.crop;
+     return Icons.crop;
+   } else if (title.contains('image_gallery_saver') || title.contains('相册') || title.contains('保存')) {
+     return Icons.save;
   }
   return Icons.apps;
 }
