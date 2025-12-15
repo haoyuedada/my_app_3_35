@@ -12,6 +12,7 @@ import 'image_gallery_saver_demo.dart';
 import 'keyboard_actions_demo.dart';
 import 'mobile_scanner_demo.dart';
 import 'permission_handler_demo.dart';
+import 'wakelock_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -99,6 +100,12 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       keyword: 'permission handler permission_handler 权限 处理',
       builder: (context) => PermissionHandlerDemo(),
     ),
+    FunctionItem(
+      title: 'wakelock Demo',
+      description: '屏幕常亮功能演示',
+      keyword: 'wakelock 屏幕 常亮',
+      builder: (context) => WakelockDemo(),
+    ),
 ];
 
   @override
@@ -180,6 +187,8 @@ IconData _getIconForFunction(String title) {
     return Icons.qr_code_scanner;
   } else if (title.contains('permission_handler') || title.contains('权限')) {
     return Icons.security;
+  } else if (title.contains('wakelock') || title.contains('常亮')) {
+    return Icons.lightbulb;
   }
   return Icons.apps;
 }
