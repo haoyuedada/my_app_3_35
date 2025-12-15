@@ -9,6 +9,8 @@ import 'fluttertoast_demo.dart';
 // import 'image_crop_demo.dart';
 // import 'image_cropper_demo.dart';
 import 'image_gallery_saver_demo.dart';
+import 'keyboard_actions_demo.dart';
+import 'mobile_scanner_demo.dart';
 
 class LibraryTestHome extends StatefulWidget {
   @override
@@ -77,6 +79,18 @@ class _LibraryTestHomeState extends State<LibraryTestHome> {
       description: '图片保存到相册功能演示',
       keyword: 'image gallery saver image_gallery_saver 图片 相册 保存',
       builder: (context) => ImageGallerySaverDemo(),
+    ),
+    FunctionItem(
+      title: 'keyboard_actions Demo',
+      description: '键盘动作处理演示',
+      keyword: 'keyboard actions keyboard_actions 键盘 动作 处理',
+      builder: (context) => KeyboardActionsExample(),
+    ),
+    FunctionItem(
+      title: 'mobile_scanner Demo',
+      description: '二维码/条形码扫描功能演示',
+      keyword: 'mobile scanner mobile_scanner 二维码 条形码 扫描',
+      builder: (context) => MobileScannerDemo(),
     ),
 ];
 
@@ -153,6 +167,10 @@ IconData _getIconForFunction(String title) {
      return Icons.crop;
    } else if (title.contains('image_gallery_saver') || title.contains('相册') || title.contains('保存')) {
      return Icons.save;
+   } else if (title.contains('keyboard_actions') || title.contains('键盘')) {
+    return Icons.keyboard;
+  } else if (title.contains('mobile_scanner') || title.contains('扫描')) {
+    return Icons.qr_code_scanner;
   }
   return Icons.apps;
 }
