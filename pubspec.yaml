@@ -80,7 +80,13 @@ dependencies:
 
   mobile_scanner:
     git: 
-      url: "https://gitee.com/openharmony-sig/fluttertpc_mobile_scanner"    
+      url: "https://gitee.com/openharmony-sig/fluttertpc_mobile_scanner"
+
+  permission_handler:
+    git:
+      url: "https://gitee.com/openharmony-sig/flutter_permission_handler.git"
+      path: permission_handler
+
   # image_crop:
   #   git:
   #     url: "https://gitee.com/openharmony-sig/flutter_image_crop.git"
