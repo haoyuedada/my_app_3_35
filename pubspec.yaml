@@ -62,7 +62,7 @@ dependencies:
   
   flutter_local_notifications:
     git: 
-      url: "https://gitee.com/openharmony-sig/fluttertpc_flutter_local_notifications.git"
+      url: "https://gitcode.com/openharmony-sig/fluttertpc_flutter_local_notifications.git"
       path: "flutter_local_notifications"
 
   flutter_widget_from_html_core:
@@ -72,11 +72,11 @@ dependencies:
 
   image_gallery_saver:
     git:
-      url: "https://gitee.com/openharmony-sig/flutter_image_gallery_saver"      
+      url: "https://gitcode.com/openharmony-sig/flutter_image_gallery_saver"      
 
   keyboard_actions:
     git:
-      url: "https://gitee.com/openharmony-sig/fluttertpc_keyboard_actions"
+      url: "https://gitcode.com/openharmony-sig/fluttertpc_keyboard_actions"
 
   mobile_scanner:
     git: 
